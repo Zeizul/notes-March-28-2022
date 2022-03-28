@@ -1,0 +1,68 @@
+var quiz = {
+nzme:'',
+start:0,
+due:0,
+tense:'present',
+participant:0,
+fontsize:40,
+weight:1,
+question:new Array(),
+response:new Array()
+}
+
+let string = JSON.stringify(quiz);
+localStorage['quiz0328'] = string;
+alert(string);
+////// next day
+let s = localStorage['quiz0328'];
+let obj = JSON.parse(s);
+alert(obj.tense);
+
+JSON, a way to present an object - or strengthify an object, object is a multi dimensional object, like a desk for example.
+It is hard to save a multidimensional object, so we break it into pieces and package it to carry it elsewhere.
+Very long thing string, string-ify. Once you make a string you can transmit.
+
+JSON.stringify = make an object to a string
+JSON.stringify(object)
+Why to stringify? To store and transmit the object.
+
+After you stringify you break down the multi dimension object to a string.
+Afterwards from the stringify, you have to transmit back and reconstruct the object.
+
+JSON.parse(string) = reconstruct the object. Break down 3D object to string with stringify, reconstruct it with parse.
+
+localStorage[key] = string; >>> accessed by key, key is a file name for example. Vulnerable if you clear browsing data.
+localStorage[key] = zip(string); parse the zipped string to return to original object.
+
+string.indexOf('target')
+(-1 not found)
+
+str.substring(starting, endposition);
+s = 'abc'
+s.substring(0,2): ab
+
+str.replace(/reg/ig, "dfd");
+
+
+
+
+
+
+Delaware State University
+Assignment/Test Submission Receipt
+Instructions:
+1. Please save this receipt to your computer. It is the only proof of the submission you just made. In case of a dispute, your instructor will not honor your claim unless you email this receipt. Paper copy is not useful. It is also a file backup in case the file server collapses
+2. Don't make any change to the receipt because any single-letter change will result in a complete failure in the receipt authentication process and your instructor will not honor edited receipt.
+StudentID	D10628832
+Operation	Submit
+Semester	37
+Course ID	20-230
+Assignment	01-0328
+Time	03/28/22 16:17
+Answer	
+#	Answer	Correct	Order
+1	JSON.parse	0	4
+2	a	1	2
+3	ab	1	6
+Attached	
+Digital Signature	1508b61dd378a1e333b19968ad0c7f53ae9fe791
